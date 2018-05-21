@@ -1,0 +1,13 @@
+== SpringBoot Kotlin JSF
+
+
+A sample project using:
+
+* Kotlin
+* Gradle
+* SpringBoot
+* Exposed
+* JSF
+** AdminFaces (PrimeFaces/Bootstrap/AdminLTE
+** JoinFaces
+** OmniFaces
