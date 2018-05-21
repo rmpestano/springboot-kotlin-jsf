@@ -1,13 +1,25 @@
 == SpringBoot Kotlin JSF
 
 
-A sample project using:
+A sample project based on https://github.com/rsjug/rsjug-kotlin-real[RSJUG `kotlin-real`^] example.
+
+ This project is using following technologies:
 
 * Kotlin
 * Gradle
 * SpringBoot
 * Exposed
+* Liquibase
 * JSF
 ** AdminFaces (PrimeFaces/Bootstrap/AdminLTE)
 ** JoinFaces
 ** OmniFaces
+
+
+=== Running
+
+----
+./gradlew bootRun
+----
+
+Access http://localhost/
