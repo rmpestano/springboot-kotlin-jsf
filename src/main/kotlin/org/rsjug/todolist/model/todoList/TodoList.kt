@@ -16,3 +16,22 @@ class TodoList(id: EntityID<Long>) : LongEntity(id) {
 object TodoLists : LongIdTable("todo_list", "id") {
     val description = varchar("description", 100)
 }
+
+data class TodoListDTO(val id: Long?,
+                       val description: String) {
+    constructor(todoList: TodoList) : this(todoList.id.value, todoList.description)
+}
+
+
+data class TodoListItemDTO(val id: Long?, val description: String) {
+    constructor(todoListItem: TodoListItem) : this(todoListItem.id.value,  todoListItem.description)
+}
+
+
+data class TodoListWithItemDTO(val id: Long,
+                               val description: String,
+                               val todoListItems: List<TodoListItemDTO>) {
+    constructor(todoList: TodoList) : this(todoList.id.value, todoList.description,
+            todoList.todoListItems.map { TodoListItemDTO(it) })
+}
+
