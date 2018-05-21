@@ -8,6 +8,6 @@ A sample project using:
 * SpringBoot
 * Exposed
 * JSF
-** AdminFaces (PrimeFaces/Bootstrap/AdminLTE
+** AdminFaces (PrimeFaces/Bootstrap/AdminLTE)
 ** JoinFaces
 ** OmniFaces
